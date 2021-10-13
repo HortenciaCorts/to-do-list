@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+## Lista de Tarefas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🌱 Projeto de uma lista de tarefas em ReactJS
 
-## Available Scripts
+### Conteúdo
 
-In the project directory, you can run:
+<p align="center">  
+	<a href="#sobre-projeto">Sobre o projeto</a> •
+	<a href="#layout">Layout</a> • 
+	<a href="#executar-projeto">Como executar o projeto</a> • 
+	<a href="#tecnologias">Tecnologias</a> • 
+	<a href="#autora">Autora</a>  
+</p>
 
-### `npm start`
+### 💻 Sobre o Projeto<a id="sobre-projeto"></a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Projeto Original](https://www.youtube.com/watch?v=95sAtAareR8&ab_channel=BoniekyLacerda)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Projeto de uma lista de tarefas utilizando ReactJS:
 
-### `npm test`
+ - [x] Adicionar item com o enter
+ - [x] Check nas tarefas feitas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🎨  Layout <a id="layout"></a>
 
-### `npm run build`
+![enter image description here](https://github.com/HortenciaCorts/to-do-list/blob/main/src/images/to-do-list.png?raw=true)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🚀  Como executar o projeto <a id="executar-projeto"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:  [Git](https://git-scm.com/),  [Node.js](https://nodejs.org/pt-br/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Além disto é bom ter um editor para trabalhar com o código como  [VSCode](https://code.visualstudio.com/)
 
-### `npm run eject`
+#### 🎲Rodando a Aplicação
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+     # Clone este repositório
+	     git clone https://github.com/HortenciaCorts/to-do-list
+     # Acesse a pasta do projeto no terminal
+	     cd to-do-list
+     # Instale a dependência do npm
+	     npm install
+     # Execute a aplicação em modo de desenvolvimento
+	     npm start 
+     # O servidor iniciará na porta: 3000
+     # Acesse http://localhost:3000
+    
+### 🛠 Tecnologias <a id="tecnologias"></a>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+- [x] ReactJS
+- [x] TypeScript
+- [x] NodeJS
+- [x] Style-Component
+- [x] UseState
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 👧 Autora <a id="autora"></a>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feito com 💖 por Hortência Côrtes 👩‍💻 
