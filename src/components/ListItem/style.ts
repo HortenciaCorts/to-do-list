@@ -7,11 +7,17 @@ type ContainerProps = {
 export const Container = styled.div(({ done }: ContainerProps) => (
     `
     display: flex;
+    justify-content: space-between;
     background-color: #20212C;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
     align-items: center;
+
+    div {
+        display: flex;
+        align-items: center;
+    }
 
     input {
         width: 25px;
@@ -24,5 +30,14 @@ export const Container = styled.div(({ done }: ContainerProps) => (
         font-size: 18px;
         text-decoration: ${done ? 'line-through' : 'initial'};
     }
+
+    svg {
+        cursor: pointer;
+    }
+
+    svg:last-child {
+        margin-left: 6px;
+    }
+
 `
 ));

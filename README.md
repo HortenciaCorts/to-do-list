@@ -18,8 +18,12 @@
 
 Projeto de uma lista de tarefas utilizando ReactJS:
 
- - [x] Adicionar item com o enter
- - [x] Check nas tarefas feitas
+- [x] Adicionar nova tarefa com o enter
+- [x] Marcar tarefa como finalizada
+
+Incrementos:
+ - [x] Armazenamento com LocalStorage
+ - [x] Excluir tarefa
 
 ### 🎨  Layout <a id="layout"></a>
 
@@ -52,6 +56,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [x] NodeJS
 - [x] Style-Component
 - [x] UseState
+
+Armazenamento:
+- [x] LocalStorage
 
 ### 👧 Autora <a id="autora"></a>
 
