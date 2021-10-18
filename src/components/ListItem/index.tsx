@@ -4,19 +4,25 @@ import { useState } from 'react'
 
 type Props = {
     item: Item
+    editTaskCheck: (id: number, taskId: boolean) => void
     removeTask: (taskId: number) => void
 }
 
-export const ListItem = ({ item, removeTask }: Props) => {
+export const ListItem = ({ item, editTaskCheck, removeTask }: Props) => {
     const [isChecked, setIsChecked] = useState(item.done)
     
+    const editCheck = (e:boolean, id:number) => {
+        setIsChecked(e)
+        editTaskCheck(id, e)
+    }
+
     return(
         <C.Container done={isChecked}>
             <div>
                 <input 
                     type="checkbox" 
                     checked={isChecked} 
-                    onChange={e => setIsChecked(e.target.checked)}
+                    onChange={e => editCheck(e.target.checked, item.id)}
                 />
                 <label>{item.name}</label>
             </div>

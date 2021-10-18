@@ -26,6 +26,18 @@ const App = () => {
     setList(newList)
   }
 
+  const handleEditTaskCheck = (id: number, taskCheck: boolean) => {
+    const newList: Item[] = [];
+    list.map((item, index) => {
+      newList.push({
+        id: item.id,
+        name: item.name,
+        done: id === index +1 ? taskCheck : item.done
+      })
+    })
+    setList(newList)
+  }
+
   const handleRemoveTask = (taskId: number) => {
     const newList = [...list];
     newList.map((item, index) => {
@@ -44,7 +56,7 @@ const App = () => {
         <C.Header> Lista de Tarefas </C.Header>
         <AddArea onEnter={handleAddTask} />
         {list.map((item, index) =>(
-         <ListItem key={index} item={item} removeTask={handleRemoveTask} />
+         <ListItem key={index} item={item} removeTask={handleRemoveTask} editTaskCheck={handleEditTaskCheck} />
         ))}
       </C.Area>
     </C.Container>
