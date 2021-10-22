@@ -24,10 +24,11 @@ Projeto de uma lista de tarefas utilizando ReactJS:
 Incrementos:
  - [x] Armazenamento com LocalStorage
  - [x] Excluir tarefa
+ - [x] Editar tarefa
 
 ### 🎨  Layout <a id="layout"></a>
 
-![enter image description here](https://github.com/HortenciaCorts/to-do-list/blob/main/src/images/to-do-list.png?raw=true)
+![enter image description here](https://github.com/HortenciaCorts/to-do-list/blob/main/src/images/to-do-list.gif?raw=true)
 
 ### 🚀  Como executar o projeto <a id="executar-projeto"></a>
 
@@ -58,7 +59,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [x] UseState
 
 Armazenamento:
-- [x] LocalStorage
+ - [x] LocalStorage
 
 ### 👧 Autora <a id="autora"></a>
 
