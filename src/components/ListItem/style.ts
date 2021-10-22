@@ -1,10 +1,26 @@
 import styled from "styled-components";
 
-type ContainerProps = {
+type InputProps = {
     done: boolean
 }
 
-export const Container = styled.div(({ done }: ContainerProps) => (
+
+export const InputText = styled.input(({ done }: InputProps) => (
+    `
+    background: transparent;
+    color: #fff;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    text-decoration: ${done ? 'line-through' : 'initial'};
+    
+    :read-only{
+        outline: none;
+    }
+
+`
+))
+export const Container = styled.div
     `
     display: flex;
     justify-content: space-between;
@@ -18,17 +34,16 @@ export const Container = styled.div(({ done }: ContainerProps) => (
         display: flex;
         align-items: center;
     }
+    
+    div.information{
+        width: 100%;
+        margin: 0 5px;
+    }
 
-    input {
+    input.checkbox {
         width: 25px;
         height: 25px;
         margin-right: 5px;
-    }
-
-    label {
-        color: #CCC;
-        font-size: 18px;
-        text-decoration: ${done ? 'line-through' : 'initial'};
     }
 
     svg {
@@ -40,4 +55,3 @@ export const Container = styled.div(({ done }: ContainerProps) => (
     }
 
 `
-));
